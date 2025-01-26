@@ -1,6 +1,7 @@
 document.addEventListener("DOMContentLoaded", function() {
    includeHTML();
    setupEventListeners();
+   initializeSwiper();
 });
 
 function includeHTML() {
@@ -31,16 +32,12 @@ function includeHTML() {
    }
 }
 
-document.addEventListener("DOMContentLoaded", function() {
-   includeHTML();
-});
-
-
 function setupEventListeners() {
    let navbar = document.querySelector('.header .navbar');
    let contactInfo = document.querySelector('.contact-info');
+   let menuBtn = document.querySelector('#menu-btn');
 
-   document.querySelector('#menu-btn').onclick = () => {
+   menuBtn.onclick = () => {
       navbar.classList.toggle('active');
    };
 
@@ -56,8 +53,6 @@ function setupEventListeners() {
       navbar.classList.remove('active');
       contactInfo.classList.remove('active');
    };
-
-   initializeSwiper();
 }
 
 function initializeSwiper() {

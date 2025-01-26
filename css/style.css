@@ -134,7 +134,19 @@ section {
 }
 
 .header .flex #menu-btn {
-  display: none;
+  display: none; /* This will be overridden in media queries */
+  cursor: pointer;
+}
+
+.header .flex .navbar {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .flex .navbar.active {
+  display: block;
 }
 
 .header .flex .search-form {
@@ -378,7 +390,6 @@ section {
     height: auto;
     object-fit: cover; /* Ensure the image covers the container without distortion */
 }
-
 
 .home .slide .content h3 {
   font-size: 6rem;
@@ -720,7 +731,7 @@ section {
 .blogs-container .blogs .slide .content p {
   padding: 1rem 0;
   font-size: 1.4rem;
-  color: var(--light-color);
+  color: var (--light-color);
   line-height: 2;
 }
 
@@ -983,7 +994,7 @@ section {
 
 .all-projects .box .content .info p {
   font-size: 1.4rem;
-  color: var(--light-color);
+  color: var (--light-color);
   margin-bottom: 2rem;
 }
 
