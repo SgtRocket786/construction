@@ -367,9 +367,18 @@ section {
 }
 
 .home .slide .content {
-  width: 50rem;
-  position: relative;
+    width: 100%;
+    max-width: 50rem;
+    position: relative;
+    padding: 0 1rem; /* Add padding to ensure content doesn't touch the edges */
 }
+
+.home .slide .content img {
+    width: 100%;
+    height: auto;
+    object-fit: cover; /* Ensure the image covers the container without distortion */
+}
+
 
 .home .slide .content h3 {
   font-size: 6rem;
